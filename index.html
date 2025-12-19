@@ -1061,7 +1061,7 @@
       <div style="font-size:22px">🎮</div>
       <div>
         <div class="title">미로 방탈출 내기게임!! ·  Version 3.1</div>
-        <div class="sub">개발자 문의 : wwwing6240@gmail.com</div>
+        <div class="sub">BGM ON by default · Full maze view · Team remaining count + Live ranking</div>
       </div>
     </div>
 
@@ -3213,7 +3213,7 @@ document.addEventListener('keydown', (e)=>{
   const obs=new MutationObserver((muts)=>{
     for(const m of muts){
       if(m.attributeName==='class' && pen.classList.contains('show')){
-        setTimeout(showDevPopup, 1200);
+        setTimeout(showDevPopup, 3000);
       }
     }
   });
@@ -3228,23 +3228,17 @@ document.addEventListener('keydown', (e)=>{
     <div class="devHero">
       <div class="devIcon">💎</div>
       <div>
-        <h2 id="devTitle">Did you enjoy it?</h2>
-        <p class="devLead">
-          I'm <b>Lee EunSeong</b>, a beginner game developer.<br>
-          If this game was fun, please support me with <b>1 XRP</b> 🙌
-        </p>
-      </div>
-    </div>
-
-    <div class="devCta">
-      <div class="devCtaLabel">XRP Wallet Address</div>
+        <h2 id="devTitle">재미있게 즐기셨나요? 🎮<br/>
+이 게임이 즐거웠다면<br/>XRP 1개로 응원해 주세요 🙌
+<div class="devCta">
+      <div class="devCtaLabel">XRP 지갑 주소</div>
       <div class="walletBox">
         <code id="xrpAddress">rDxfhNRgCDNDckm45zT5ayhKDC4Ljm7UoP</code>
-        <button id="copyXrpBtn" class="copyBtn" type="button">COPY</button>
+        <button id="copyXrpBtn" class="copyBtn" type="button">복사</button>
       </div>
       <div class="devFooter">
-        <span class="devBy">Thanks for playing ❤️</span>
-        <button class="closeBtn" id="closeDevPopup" type="button">CLOSE</button>
+        <span class="devBy">플레이해주셔서 감사합니다 💗 ❤️</span>
+        <button class="closeBtn" id="closeDevPopup" type="button">닫기</button>
       </div>
     </div>
 
